@@ -8,11 +8,12 @@ export const GlobalStyle = createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
     background-color: none;
+    font-weight: normal;
   }
 
   @font-face {
     font-family: 'Findream';
-    src: url(${fonts.Findream}) format('tts');
+    src: url(${fonts.Findream}) format('truetype');
   }
 
   body {

@@ -6,5 +6,6 @@ export const mainTheme: DefaultTheme = {
     secondary100: "#9B1C59",
     gray100: "#373737",
     gray0: "#FFFFFF",
+    shadow: "rgba(0, 0, 0, 0.25)",
   },
 };
