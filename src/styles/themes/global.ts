@@ -9,7 +9,15 @@ export const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
     background-color: none;
     font-weight: normal;
+    outline: 0 !important;
   }
+
+  a {
+    -webkit-tap-highlight-color: transparent;
+}
+
+  
+  
 
   @font-face {
     font-family: 'Findream';
@@ -17,10 +25,18 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    font-family: 'Montserrat', sans-serif;
     font-size: 1.2rem;
     font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
     color: ${({ theme }) => theme.colors.gray100};
     background-color: ${({ theme }) => theme.colors.primary100};
+  }
+
+  h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 40px;
   }
 `;
