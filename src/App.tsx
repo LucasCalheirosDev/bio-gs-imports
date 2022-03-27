@@ -1,9 +1,17 @@
-function App() {
-  function test() {
-    console.log("teste");
-  }
+import { ThemeProvider } from "styled-components";
 
-  return <h1>Hello World com arrow</h1>;
+import { HomeScreen } from "./screen";
+import { GlobalStyle, mainTheme } from "./styles/themes";
+
+function App() {
+  return (
+    <ThemeProvider theme={mainTheme}>
+      <div className="App">
+        <GlobalStyle />
+        <HomeScreen />
+      </div>
+    </ThemeProvider>
+  );
 }
 
 export default App;
