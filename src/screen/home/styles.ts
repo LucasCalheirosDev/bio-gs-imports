@@ -5,6 +5,7 @@ export const Container = styled.div`
   flex-direction: column;
   flex: 1;
   max-width: 1000px;
+  min-width: 360px;
   margin: auto;
   background-image: linear-gradient(
     180deg,

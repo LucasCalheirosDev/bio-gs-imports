@@ -22,7 +22,7 @@ export function ServicesSection() {
         <Animation.Container>
           <ul>
             {services.map((item, index) => (
-              <li>
+              <li key={item}>
                 <Animation.ContentContainer
                   animationType="showRight"
                   delay={index * 0.4}

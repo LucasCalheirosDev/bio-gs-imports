@@ -1,3 +1,4 @@
+import { Particles } from "../../components";
 import {
   HeaderSection,
   ContactsSection,
@@ -11,12 +12,15 @@ import { Container } from "./styles";
 export function HomeScreen() {
   return (
     <Container>
-      <HeaderSection />
-      <ContactsSection />
-      <ServicesSection />
-      <AboutSection />
-      <AddressSection />
-      <FooterSection />
+      <div style={{ zIndex: 99 }}>
+        <HeaderSection />
+        <ContactsSection />
+        <ServicesSection />
+        <AboutSection />
+        <AddressSection />
+        <FooterSection />
+      </div>
+      <Particles />
     </Container>
   );
 }
