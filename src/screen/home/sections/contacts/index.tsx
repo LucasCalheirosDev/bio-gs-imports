@@ -1,5 +1,5 @@
 import { icons } from "../../../../assets";
-import { Button } from "../../../../components";
+import { Button, Title, Animation } from "../../../../components";
 import { Container } from "./style";
 
 interface IContacts {
@@ -29,18 +29,22 @@ const contactsArray: IContacts[] = [
 export function ContactsSection() {
   return (
     <Container>
-      <h1 className="Title">
+      <Title>
         Fale
         <br />
         comigo
-      </h1>
-      <ul className="Contacts_list">
-        {contactsArray.map((item) => (
-          <Button icon={item.icon} link={item.link}>
-            {item.text}
-          </Button>
-        ))}
-      </ul>
+      </Title>
+      <Animation.Container>
+        <Animation.ContentContainer animationType="showRight" delay={1}>
+          <ul className="Contacts_list">
+            {contactsArray.map((item) => (
+              <Button icon={item.icon} link={item.link}>
+                {item.text}
+              </Button>
+            ))}
+          </ul>
+        </Animation.ContentContainer>
+      </Animation.Container>
     </Container>
   );
 }

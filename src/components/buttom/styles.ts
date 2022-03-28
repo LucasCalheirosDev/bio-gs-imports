@@ -1,7 +1,10 @@
+import { motion } from "framer-motion";
 import styled from "styled-components";
 
-export const Container = styled.a.attrs({
+export const Container = styled(motion.a).attrs({
   target: "_blank",
+  whileHover: { x: 15 },
+  whileTap: { scale: 0.95 },
 })`
   display: flex;
   flex-direction: row;

@@ -1,4 +1,5 @@
 import { images, svg } from "../../../../assets";
+import { Animation } from "../../../../components";
 import { Container, AvatarContainer } from "./style";
 
 export function HeaderSection() {
@@ -12,8 +13,14 @@ export function HeaderSection() {
           alt="Dra Ana Paula Portela"
           className="Avatar"
         />
-        <h1 className="Name">Dra Ana Paula Portela</h1>
-        <span className="Function">Biomédica Esteta</span>
+        <Animation.Container>
+          <Animation.ContentContainer animationType="showBottomTop">
+            <h1 className="Name">Dra Ana Paula Portela</h1>
+          </Animation.ContentContainer>
+          <Animation.ContentContainer animationType="showBottomTop" delay={0.5}>
+            <span className="Function">Biomédica Esteta</span>
+          </Animation.ContentContainer>
+        </Animation.Container>
         <img
           src={images.headerOrnaments}
           alt="Ornamentos"

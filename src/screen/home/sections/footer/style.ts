@@ -7,6 +7,7 @@ export const ContentContainer = styled.footer`
   border-radius: 2rem 2rem 0 0;
   background-color: ${({ theme }) => theme.colors.gray0};
   margin: 0 5%;
+  align-items: center;
 
   p {
     flex: 1;

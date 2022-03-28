@@ -1,4 +1,5 @@
 import { icons, svg, images } from "../../../../assets";
+import { Title, Animation } from "../../../../components";
 import { Container, ContainerContent } from "./style";
 
 const services: string[] = [
@@ -13,19 +14,26 @@ export function ServicesSection() {
   return (
     <Container>
       <ContainerContent>
-        <h1 className="Title">
+        <Title>
           Meus
           <br />
           serviços
-        </h1>
-        <ul>
-          {services.map((item) => (
-            <li>
-              <img src={icons.circle} alt="marcador" className="Icon" />
-              {item}
-            </li>
-          ))}
-        </ul>
+        </Title>
+        <Animation.Container>
+          <ul>
+            {services.map((item, index) => (
+              <li>
+                <Animation.ContentContainer
+                  animationType="showRight"
+                  delay={index * 0.4}
+                >
+                  <img src={icons.circle} alt="marcador" className="Icon" />
+                  {item}
+                </Animation.ContentContainer>
+              </li>
+            ))}
+          </ul>
+        </Animation.Container>
         <img
           src={images.servicesOrnaments}
           alt="ornaments"
