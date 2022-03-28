@@ -23,5 +23,6 @@ export const Container = styled.div`
     bottom: 0px;
     left: 0px;
     width: 350px;
+    opacity: 0.8;
   }
 `;

@@ -14,6 +14,8 @@ import footerOrnaments from "./images/footer-ornaments.png";
 import headerOrnaments from "./images/header-ornaments.png";
 import profile from "./images/profile.jpg";
 import servicesOrnaments from "./images/services-ornaments.png";
+// json
+import particlesConfig from "./json/particlesConfig";
 // svg
 import borderFrame from "./svg/border-frame.svg";
 import headerDivision from "./svg/header-division.svg";
@@ -32,3 +34,4 @@ export const images = {
 };
 export const svg = { headerDivision, borderFrame, logo, rightHeart, leftHeart };
 export const icons = { email, insta, whats, chevronRight, circle, maps };
+export const json = { particlesConfig };

@@ -38,7 +38,7 @@ export function ContactsSection() {
         <Animation.ContentContainer animationType="showRight" delay={1}>
           <ul className="Contacts_list">
             {contactsArray.map((item) => (
-              <Button icon={item.icon} link={item.link}>
+              <Button icon={item.icon} link={item.link} key={item.text}>
                 {item.text}
               </Button>
             ))}

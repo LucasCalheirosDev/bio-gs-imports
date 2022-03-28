@@ -20,6 +20,7 @@ export const Container = styled.div`
     top: 0;
     right: 0;
     height: 70%;
+    opacity: 0.8;
   }
 
   .Icon {

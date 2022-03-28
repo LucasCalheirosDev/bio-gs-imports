@@ -21,7 +21,7 @@ export function AboutSection() {
       <Animation.Container>
         <ul>
           {about.map((item, index) => (
-            <li>
+            <li key={item}>
               <Animation.ContentContainer
                 animationType="showRight"
                 delay={index * 0.4}

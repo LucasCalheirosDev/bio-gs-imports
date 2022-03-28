@@ -6,10 +6,17 @@ export const Container = styled.div`
   color: ${({ theme }) => theme.colors.gray0};
   z-index: 10;
 
+  .Cover {
+    width: 100%;
+    height: 64vw;
+    object-fit: cover;
+  }
+
   .Division {
     margin-top: -8%;
     width: 100%;
-    height: auto;
+    min-height: 24vw;
+    object-fit: cover;
   }
 `;
 
@@ -22,8 +29,10 @@ export const AvatarContainer = styled.div`
 
   .Avatar {
     border-radius: 50%;
-    width: 45%;
+    width: 50vw;
+    height: 50vw;
     max-width: 300px;
+    max-height: 300px;
     box-shadow: 0px 4px 15px ${({ theme }) => theme.colors.shadow};
     border-style: inset;
     border: 0.4rem solid ${({ theme }) => theme.colors.gray0};
