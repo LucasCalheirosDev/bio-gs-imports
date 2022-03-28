@@ -12,7 +12,7 @@
     "module": "ESNext",
     "moduleResolution": "Node",
     "resolveJsonModule": true,
-    "isolatedModules": true,
+    "isolatedModules": false, //desabilitado por causa do react-tsparticles
     "noEmit": true,
     "jsx": "react-jsx"
   },
