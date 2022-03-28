@@ -1,4 +1,5 @@
-import { images, svg } from "../../../../assets";
+import { svg } from "../../../../assets";
+import { Title, Animation } from "../../../../components";
 import { Container } from "./style";
 
 const about: string[] = [
@@ -12,17 +13,32 @@ const about: string[] = [
 export function AboutSection() {
   return (
     <Container>
-      <h1 className="Title">
+      <Title>
         Sobre
         <br />
         mim
-      </h1>
-      <ul>
-        {about.map((item) => (
-          <li>{item}</li>
-        ))}
-      </ul>
-      <img src={svg.logo} alt="logo" className="Logo" />
+      </Title>
+      <Animation.Container>
+        <ul>
+          {about.map((item, index) => (
+            <li>
+              <Animation.ContentContainer
+                animationType="showRight"
+                delay={index * 0.4}
+              >
+                {item}
+              </Animation.ContentContainer>
+            </li>
+          ))}
+        </ul>
+        <Animation.ContentContainer
+          animationType="opacity"
+          delay={1}
+          duration={2}
+        >
+          <img src={svg.logo} alt="logo" className="Logo" />
+        </Animation.ContentContainer>
+      </Animation.Container>
     </Container>
   );
 }
