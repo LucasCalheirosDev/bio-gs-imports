@@ -8,6 +8,7 @@ export const Container = styled.div`
   background-color: ${({ theme }) => theme.colors.gray0};
   margin-left: 5%;
   margin-top: 1.5rem;
+  z-index: 99;
 
   .Contacts_list {
     margin-top: 2rem;
