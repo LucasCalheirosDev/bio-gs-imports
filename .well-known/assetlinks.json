@@ -1,0 +1,9 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "br.com.camicado.mobile",
+    "sha256_cert_fingerprints":
+    ["21:DA:39:7F:67:CE:84:CA:F3:67:8A:AC:08:E2:1C:F6:C3:4F:59:3A:BF:49:2B:E0:AE:63:7E:F7:D5:C1:40:BB"]
+  }
+}]
