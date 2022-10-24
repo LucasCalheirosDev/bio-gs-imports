@@ -1,5 +1,29 @@
-[{
-  "relation": ["delegate_permission/common.handle_all_urls"],
-  "target" : { "namespace": "android_app", "package_name": "br.com.camicado.mobile",
-               "sha256_cert_fingerprints": ["C3:3E:5E:5E:EF:8B:5A:2E:83:E8:B4:14:EB:8C:83:45:6D:2A:60:FB:63:12:79:CD:50:3D:76:EE:B8:B1:08:19"] }
-}]
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "br.com.camicado.mobile",
+      "sha256_cert_fingerprints": [
+        "C3:3E:5E:5E:EF:8B:5A:2E:83:E8:B4:14:EB:8C:83:45:6D:2A:60:FB:63:12:79:CD:50:3D:76:EE:B8:B1:08:19"
+      ]
+    }
+  },
+  {
+    "relation": ["delegate_permission/common.get_login_creds"],
+    "target": {
+      "namespace": "web",
+      "site": "https://dra-anaportela.netlify.app"
+    }
+  },
+  {
+    "relation": ["delegate_permission/common.get_login_creds"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "br.com.camicado.mobile",
+      "sha256_cert_fingerprints": [
+        "C3:3E:5E:5E:EF:8B:5A:2E:83:E8:B4:14:EB:8C:83:45:6D:2A:60:FB:63:12:79:CD:50:3D:76:EE:B8:B1:08:19"
+      ]
+    }
+  }
+]
