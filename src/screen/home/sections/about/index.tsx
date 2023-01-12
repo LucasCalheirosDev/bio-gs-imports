@@ -9,7 +9,7 @@ export function AboutSection() {
         <Title>
           Sobre
           <br />
-          mim
+          nós
         </Title>
         <Animation.Container>
           <Animation.ContentContainer animationType="showRight" delay={1}>
