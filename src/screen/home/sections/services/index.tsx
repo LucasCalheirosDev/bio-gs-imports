@@ -1,48 +1,41 @@
-import { icons, svg, images } from "../../../../assets";
+import { icons, images } from "../../../../assets";
 import { Title, Animation } from "../../../../components";
-import { Container, ContainerContent } from "./style";
+import { Container } from "./style";
 
 const services: string[] = [
-  "Toxina Botulínica",
-  "Preenchimento",
-  "Bioestimuladores",
-  "Intradermoterapia",
-  "Limpeza de  pele",
+  "Fale conosco",
+  "Por whats ou instagram",
+  "Peça seus produtos",
+  "Receba em sua casa",
+  "Escolha como pagar",
+  "Aproveite seu produto",
+  "Com garantia e qualidade",
+  "Curta e compartilhe",
 ];
 
 export function ServicesSection() {
   return (
     <Container>
-      <ContainerContent>
-        <Title>
-          Meus
-          <br />
-          serviços
-        </Title>
-        <Animation.Container>
-          <ul>
-            {services.map((item, index) => (
-              <li key={item}>
-                <Animation.ContentContainer
-                  animationType="showRight"
-                  delay={index * 0.4}
-                >
-                  <img src={icons.circle} alt="marcador" className="Icon" />
-                  {item}
-                </Animation.ContentContainer>
-              </li>
-            ))}
-          </ul>
-        </Animation.Container>
-        <img
-          src={images.servicesOrnaments}
-          alt="ornaments"
-          className="Ornaments"
-        />
-      </ContainerContent>
-      <img src={svg.borderFrame} alt="borderFrame" className="Border-top" />
-      <img src={svg.borderFrame} alt="borderFrame" className="Border-bottom" />
-      <div className="Border-right" />
+      <Title>
+        Tudo em
+        <br />
+        eletrônicos
+      </Title>
+      <Animation.Container>
+        <ul>
+          {services.map((item, index) => (
+            <li key={item}>
+              <Animation.ContentContainer
+                animationType="showRight"
+                delay={index * 0.3}
+              >
+                <img src={icons.circle} alt="marcador" className="Icon" />
+                {item}
+              </Animation.ContentContainer>
+            </li>
+          ))}
+        </ul>
+      </Animation.Container>
     </Container>
   );
 }

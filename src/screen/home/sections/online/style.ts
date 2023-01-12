@@ -9,39 +9,35 @@ export const ContentContainer = styled.div`
   flex-direction: column;
   color: ${({ theme }) => theme.colors.gray0};
 
-  .Logo {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    width: 140px;
-    height: auto;
-  }
-
-  p {
-    margin-top: 2rem;
-    line-height: 35px;
-    padding-right: 20px;
-  }
-
-  ul {
-    margin-top: 2rem;
-    list-style-type: none;
-  }
-
-  li + li {
-    margin-top: 1.5rem;
-  }
-
   .Title {
     line-height: 50px;
   }
 
+  ul {
+    margin-top: 1.5rem;
+    list-style-type: none;
+  }
+
+  li + li {
+    margin-top: 1.4rem;
+  }
+
   .Ornaments {
     position: absolute;
-    top: 15%;
-    right: 8%;
-    height: 80%;
+    top: 0;
+    right: 0;
+    height: 100%;
     z-index: -1;
+  }
+
+  .Alert {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
+  }
+
+  .Icon {
+    margin-right: 1rem;
   }
 `;
 

@@ -1,44 +1,34 @@
-import { svg } from "../../../../assets";
+import { svg, images } from "../../../../assets";
 import { Title, Animation } from "../../../../components";
-import { Container } from "./style";
-
-const about: string[] = [
-  "Ministrante de Cursos",
-  "Graduada em Biomedicina certificada pelo Conselho Regional de Biomedicina",
-  "Especializada em Análises Clínicas",
-  "Intradermoterapia",
-  "Especializada em Estética Avançada",
-];
+import { Container, ContentContainer } from "./style";
 
 export function AboutSection() {
   return (
     <Container>
-      <Title>
-        Sobre
-        <br />
-        mim
-      </Title>
-      <Animation.Container>
-        <ul>
-          {about.map((item, index) => (
-            <li key={item}>
-              <Animation.ContentContainer
-                animationType="showRight"
-                delay={index * 0.4}
-              >
-                {item}
-              </Animation.ContentContainer>
-            </li>
-          ))}
-        </ul>
-        <Animation.ContentContainer
-          animationType="opacity"
-          delay={1}
-          duration={2}
-        >
-          <img src={svg.logo} alt="logo" className="Logo" />
-        </Animation.ContentContainer>
-      </Animation.Container>
+      <ContentContainer>
+        <Title>
+          Sobre
+          <br />
+          mim
+        </Title>
+        <Animation.Container>
+          <Animation.ContentContainer animationType="showRight" delay={1}>
+            <p>
+              Somos uma loja online, com vendas através das redes sociais,
+              sempre comprometida em levar até os nossos clientes os melhores
+              importados, sempre com atendimento pessoal e personalizado
+            </p>
+          </Animation.ContentContainer>
+        </Animation.Container>
+        <img
+          src={images.footerOrnaments}
+          alt="ornaments"
+          className="Ornaments"
+        />
+      </ContentContainer>
+      <img src={svg.borderFrame} alt="borderFrame" className="Border-top" />
+      <img src={svg.borderFrame} alt="borderFrame" className="Border-bottom" />
+      <div className="Border-right" />
     </Container>
   );
 }

@@ -8,8 +8,7 @@ import insta from "./icons/insta.svg";
 import maps from "./icons/maps.svg";
 import whats from "./icons/whats.svg";
 // Images
-import addressOrnaments from "./images/address-ornaments.png";
-import cover from "./images/cover.jpg";
+import cover from "./images/cover.png";
 import footerOrnaments from "./images/footer-ornaments.png";
 import headerOrnaments from "./images/header-ornaments.png";
 import profile from "./images/profile.jpg";
@@ -18,10 +17,14 @@ import servicesOrnaments from "./images/services-ornaments.png";
 import particlesConfig from "./json/particlesConfig";
 // svg
 import borderFrame from "./svg/border-frame.svg";
-import headerDivision from "./svg/header-division.svg";
 import leftHeart from "./svg/left-heart.svg";
 import logo from "./svg/logo.svg";
 import rightHeart from "./svg/right-heart.svg";
+import logoText from "./svg/logo-text.svg";
+
+import time from "./svg/time.svg";
+import locale from "./svg/locale.svg";
+import payment from "./svg/payment.svg";
 
 export const fonts = { Findream };
 export const images = {
@@ -29,9 +32,17 @@ export const images = {
   cover,
   headerOrnaments,
   servicesOrnaments,
-  addressOrnaments,
   footerOrnaments,
 };
-export const svg = { headerDivision, borderFrame, logo, rightHeart, leftHeart };
+export const svg = {
+  borderFrame,
+  logo,
+  rightHeart,
+  leftHeart,
+  logoText,
+  time,
+  locale,
+  payment,
+};
 export const icons = { email, insta, whats, chevronRight, circle, maps };
 export const json = { particlesConfig };

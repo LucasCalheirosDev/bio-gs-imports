@@ -30,7 +30,7 @@ export const GlobalStyle = createGlobalStyle`
     font-style: normal;
     font-weight: 400;
     color: ${({ theme }) => theme.colors.gray100};
-    background-color: ${({ theme }) => theme.colors.primary100};
+    background-color: ${({ theme }) => theme.colors.gray50};
   }
 
   h1 {

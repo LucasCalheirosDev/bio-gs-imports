@@ -9,7 +9,8 @@ export const Container = styled.div`
   margin: auto;
   background-image: linear-gradient(
     180deg,
-    ${({ theme }) => `${theme.colors.primary100}, ${theme.colors.secondary100}`}
+    ${({ theme }) =>
+      `${theme.colors.black} , ${theme.colors.gray50} ,${theme.colors.black}, ${theme.colors.gray50}`}
   );
   z-index: -1;
 `;

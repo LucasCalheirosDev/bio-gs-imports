@@ -7,7 +7,6 @@ export const Container = styled.div`
   flex-direction: column;
   background-color: ${({ theme }) => theme.colors.gray0};
   margin-left: 5%;
-  margin-top: 1.5rem;
 
   .Contacts_list {
     margin-top: 2rem;

@@ -11,17 +11,17 @@ interface IContacts {
 const contactsArray: IContacts[] = [
   {
     icon: "whats",
-    link: "https://api.whatsapp.com/send/?phone=5579998475885",
-    text: "Meu whatsApp",
+    link: "https://api.whatsapp.com/send/?phone=5579998326271",
+    text: "Nosso whatsApp",
   },
-  {
-    icon: "email",
-    link: "mailto:draanaportela@gmail.com",
-    text: "Mande um email",
-  },
+  // {
+  //   icon: "email",
+  //   link: "mailto:draanaportela@gmail.com",
+  //   text: "Mande um email",
+  // },
   {
     icon: "insta",
-    link: "https://www.instagram.com/dra.anaportela/",
+    link: "https://www.instagram.com/sou.gsimports",
     text: "Siga no instagram",
   },
 ];

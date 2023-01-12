@@ -1,26 +1,19 @@
-import { svg, images } from "../../../../assets";
+import { svg } from "../../../../assets";
 import { Animation } from "../../../../components";
-import { Container, ContentContainer } from "./style";
+import { ContentContainer } from "./style";
 
 export function FooterSection() {
   return (
-    <Container>
-      <Animation.Container viewport={{ once: true, amount: 0.8 }}>
-        <ContentContainer>
-          <Animation.ContentContainer animationType="opacity" delay={1}>
-            <img src={svg.leftHeart} alt="corações" />
-          </Animation.ContentContainer>
-          <Animation.ContentContainer animationType="showBottomTop">
-            <p className="FooterText">
-              Transforme sua autoestima com a Estética Avançada
-            </p>
-          </Animation.ContentContainer>
-          <Animation.ContentContainer animationType="opacity" delay={1}>
-            <img src={svg.rightHeart} alt="coraçoes" />
-          </Animation.ContentContainer>
-        </ContentContainer>
+    <ContentContainer>
+      <Animation.Container>
+        <Animation.ContentContainer animationType="showBottomTop">
+          <p className="FooterText">
+            Estamos te esperando.
+            <br />
+            Nos siga nas redes sociais
+          </p>
+        </Animation.ContentContainer>
       </Animation.Container>
-      <img src={images.footerOrnaments} alt="ornaments" className="Ornaments" />
-    </Container>
+    </ContentContainer>
   );
 }
