@@ -8,8 +8,8 @@ export const Container = styled(motion.a).attrs({
 })`
   display: flex;
   flex-direction: row;
-  padding: 0.5rem 0.5rem 0.5rem 1.5rem;
-  border-radius: 2rem;
+  padding: 0.5rem 0.5rem 0.5rem 1rem;
+  border-radius: 1rem;
   border: 0.12rem solid ${({ theme }) => theme.colors.primary100};
   background-color: ${({ theme }) => theme.colors.gray0};
   align-items: center;
@@ -27,6 +27,7 @@ export const Container = styled(motion.a).attrs({
   .Icon {
     align-self: stretch;
     fill: ${({ theme }) => theme.colors.primary100};
+    height: 100%;
   }
 
   .Right_icon {

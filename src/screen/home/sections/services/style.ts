@@ -1,13 +1,18 @@
 import styled from "styled-components";
 
-export const ContainerContent = styled.div`
-  display: flex;
-  position: relative;
-  flex: 1;
+export const Container = styled.div`
   padding: 2rem;
-  margin-left: 5%;
+  border-radius: 2rem 0 0 2rem;
+  display: flex;
   flex-direction: column;
-  color: ${({ theme }) => theme.colors.gray0};
+  background-color: ${({ theme }) => theme.colors.gray0};
+  margin-left: 5%;
+  position: relative;
+
+  .Title {
+    line-height: 50px;
+    color: ${({ theme }) => theme.colors.primary100};
+  }
 
   ul {
     margin-top: 2rem;
@@ -27,32 +32,5 @@ export const ContainerContent = styled.div`
 
   li + li {
     margin-top: 0.8rem;
-  }
-`;
-
-export const Container = styled.div`
-  display: flex;
-  position: relative;
-  flex-direction: row;
-
-  .Border-top {
-    position: absolute;
-    top: 0;
-    right: 5%;
-  }
-
-  .Border-bottom {
-    position: absolute;
-    bottom: 0;
-    right: 5%;
-    transform: rotate(90deg);
-  }
-
-  .Border-right {
-    width: 5%;
-    height: 50px;
-    background-color: ${({ theme }) => theme.colors.gray0};
-    border-radius: -20px;
-    height: auto;
   }
 `;

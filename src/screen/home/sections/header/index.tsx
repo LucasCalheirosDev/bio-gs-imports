@@ -6,19 +6,14 @@ export function HeaderSection() {
   return (
     <Container>
       <img src={images.cover} alt="Foto de Capa" className="Cover" />
-      <img src={svg.headerDivision} alt="Divisão" className="Division" />
       <AvatarContainer>
-        <img
-          src={images.profile}
-          alt="Dra Ana Paula Portela"
-          className="Avatar"
-        />
+        <img src={images.profile} alt="GS Imports" className="Avatar" />
         <Animation.Container>
           <Animation.ContentContainer animationType="showBottomTop">
-            <h1 className="Name">Dra Ana Paula Portela</h1>
+            <img src={svg.logoText} alt="Imports" className="Logo" />
           </Animation.ContentContainer>
           <Animation.ContentContainer animationType="showBottomTop" delay={0.5}>
-            <span className="Function">Biomédica Esteta</span>
+            <span className="Function">tudo em eletrônicos</span>
           </Animation.ContentContainer>
         </Animation.Container>
         <img

@@ -8,14 +8,7 @@ export const Container = styled.div`
 
   .Cover {
     width: 100%;
-    height: 64vw;
-    object-fit: cover;
-  }
-
-  .Division {
-    margin-top: -8%;
-    width: 100%;
-    min-height: 24vw;
+    height: auto;
     object-fit: cover;
   }
 `;
@@ -24,13 +17,13 @@ export const AvatarContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: -30%;
+  margin-top: -10%;
   position: relative;
 
   .Avatar {
     border-radius: 50%;
-    width: 50vw;
-    height: 50vw;
+    width: 40vw;
+    height: 40vw;
     max-width: 300px;
     max-height: 300px;
     box-shadow: 0px 4px 15px ${({ theme }) => theme.colors.shadow};
@@ -39,20 +32,24 @@ export const AvatarContainer = styled.div`
     margin-bottom: 1.2rem;
   }
 
-  .Name {
-    font-family: "Findream";
-    font-size: 2.1rem;
-    font-weight: 300;
-    text-align: center;
-    margin-bottom: 0.6rem;
+  .Logo {
+    width: 100%;
+    height: 1.7rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.4rem;
   }
+
   .Function {
     display: block;
     text-align: center;
+    margin-bottom: 2.5rem;
   }
+
   .Ornaments {
     position: absolute;
     z-index: -1;
-    width: 100%;
+    right: 0;
+    bottom: 0;
+    width: 65%;
   }
 `;

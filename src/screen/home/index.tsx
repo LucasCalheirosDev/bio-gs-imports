@@ -3,7 +3,7 @@ import {
   ContactsSection,
   ServicesSection,
   AboutSection,
-  AddressSection,
+  OnlineSection,
   FooterSection,
 } from "./sections";
 import { Container } from "./styles";
@@ -11,12 +11,14 @@ import { Container } from "./styles";
 export function HomeScreen() {
   return (
     <Container>
-      <HeaderSection />
-      <ContactsSection />
-      <ServicesSection />
-      <AboutSection />
-      <AddressSection />
-      <FooterSection />
+      <div style={{ zIndex: 99 }}>
+        <HeaderSection />
+        <ContactsSection />
+        <OnlineSection />
+        <ServicesSection />
+        <AboutSection />
+        <FooterSection />
+      </div>
     </Container>
   );
 }

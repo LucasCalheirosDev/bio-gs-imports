@@ -12,7 +12,13 @@ interface IButtonProps {
 export function Button({ children, link, icon }: IButtonProps) {
   return (
     <Container href={link}>
-      <img src={icons[icon]} alt="Icone Esquerdo" className="Icon" />
+      <img
+        src={icons[icon]}
+        alt="Icone Esquerdo"
+        className="Icon"
+        height={30}
+        width={30}
+      />
       <div className="Children">{children}</div>
       <img
         src={icons.chevronRight}
