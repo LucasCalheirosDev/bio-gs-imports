@@ -32,7 +32,7 @@ export function ContactsSection() {
       <Title>
         Fale
         <br />
-        comigo
+        conosco
       </Title>
       <Animation.Container>
         <Animation.ContentContainer animationType="showRight" delay={1}>

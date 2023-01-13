@@ -1,4 +1,3 @@
-import { svg } from "../../../../assets";
 import { Animation } from "../../../../components";
 import { ContentContainer } from "./style";
 

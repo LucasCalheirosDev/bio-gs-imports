@@ -8,7 +8,9 @@ export const Container = styled.div`
 
   .Cover {
     width: 100%;
-    height: auto;
+    height: 64vw;
+    max-width: 1000px;
+    min-height: 250px;
     object-fit: cover;
   }
 `;

@@ -12,7 +12,7 @@ export function AboutSection() {
           nós
         </Title>
         <Animation.Container>
-          <Animation.ContentContainer animationType="showRight" delay={1}>
+          <Animation.ContentContainer animationType="showRight" delay={0.4}>
             <p>
               Somos uma loja online, com vendas através das redes sociais,
               sempre comprometida em levar até os nossos clientes os melhores
