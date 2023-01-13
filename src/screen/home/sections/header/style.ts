@@ -9,7 +9,7 @@ export const Container = styled.div`
   .Cover {
     width: 100%;
     height: 64vw;
-    max-width: 1000px;
+    max-height: 640px;
     min-height: 250px;
     object-fit: cover;
   }
